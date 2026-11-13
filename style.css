@@ -222,6 +222,46 @@ h4
     margin-bottom: 30px;
 }
 
+/* Rapproche le titre de poste de sa liste à puces */
+.about-text p:has(+ ul),
+.about-text p.exp-title {
+    margin-bottom: 10px;
+}
+
+/* Harmonisation des listes avec le style de .about-text p */
+.about-text ul {
+    color: white;
+    letter-spacing: 1px;
+    line-height: 24px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding-left: 24px;
+    list-style-type: disc;
+}
+
+.about-text ul li {
+    margin-bottom: 8px;
+}
+
+/* Puces assorties au jaune du thème */
+.about-text ul li::marker {
+    color: #f0c000;
+}
+
+/* Sous-listes (ex: semestres KoreaTech) */
+.about-text ul ul {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    list-style-type: circle;
+}
+
+/* Supprime la puce ronde devant les émojis dans Hard Skills */
+.about-text ul.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
 button
 {
     background-color: transparent;
